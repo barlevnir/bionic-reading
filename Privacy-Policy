@@ -4,7 +4,16 @@ This extension does not:
 - Collect any personal information
 - Track user behavior
 - Store or transmit any data
-- Require any special permissions beyond accessing the active tab
 - Connect to any external servers
 
-All text processing is performed locally within your browser. The extension only modifies the visual presentation of text on webpages you choose to view with bionic reading enabled.
+The extension uses the following permissions:
+- "activeTab": To temporarily access the current webpage when you click the extension icon
+- "scripting": To apply text formatting changes only when explicitly requested
+
+All text processing is performed locally within your browser. The extension only modifies the visual presentation of text on webpages where you explicitly activate it by clicking the extension icon. No data is stored or transmitted, and the modifications are temporary and limited to the active tab.
+
+The extension:
+- Only runs when you click its icon
+- Does not access any webpages until you activate it
+- Does not persist between browsing sessions
+- Does not run in the background
